@@ -1,0 +1,1 @@
+target file path - globus-loaner-box-cpp-7b967e/backend-ai/ai_scripts/loanerbox/routers/models/YOLO_ROI.pt
