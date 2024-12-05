@@ -1,0 +1,21 @@
+{
+  "name": "Simple Todo List",
+  "version": "1.0.0",
+  "description": "A simple todo list application",
+  "author": "OpenAI",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  },
+  "scripts": {
+    "start": "live-server src",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "live-server": "^1.2.2"
+  }
+}
