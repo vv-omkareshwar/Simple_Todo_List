@@ -1,0 +1,27 @@
+{
+  "name": "simple-todo-list-ts",
+  "version": "1.0.0",
+  "description": "A simple todo list application using TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js"
+  },
+  "keywords": ["todo", "typescript"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "jquery": "^3.6.0",
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@popperjs/core": "^2.11.6"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "jest": "^29.5.0",
+    "@types/jest": "^29.5.2",
+    "ts-jest": "^29.1.0",
+    "@types/node": "^16.11.12"
+  }
+}
