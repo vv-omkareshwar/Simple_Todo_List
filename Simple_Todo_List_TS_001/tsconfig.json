@@ -1,0 +1,24 @@
+// This is a placeholder for JavaScript configuration.
+// Since we're converting from TypeScript to JavaScript, we don't need a tsconfig.json file.
+// Instead, we'll use a minimal configuration for our JavaScript project.
+
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
+
+// Note: This configuration is not used in JavaScript projects directly.
+// It's kept here for reference in case you need to set up tools like Babel or Webpack.
