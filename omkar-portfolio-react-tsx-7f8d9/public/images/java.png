@@ -1,0 +1,3 @@
+// No conversion needed for image files.
+// The file "java.png" should remain in the public/images directory.
+// It is used as an asset in the portfolio website, likely to represent Java programming skills.
