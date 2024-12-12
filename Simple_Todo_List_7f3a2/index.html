@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="to do list, online to do list, to do list app"
+    />
+    <meta
+      name="description"
+      content="Responsive, online To Do List App that can save the tasks into local storage.
+    Whenever you enter from a device, your information won't be lost unless clear local storage by clearing the history or doing something else."
+    />
+    <meta name="author" content="Okan Uregen" />
+    <title>To Do List</title>
+    <script
+      src="https://kit.fontawesome.com/9c206210e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto mt-5 px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <div class="lg:col-span-4 lg:order-3">
+          <div class="bg-white rounded-lg shadow-md">
+            <div class="bg-gray-200 px-4 py-2 rounded-t-lg">
+              <h5 class="text-lg font-semibold">Add New Task</h5>
+            </div>
+            <div class="p-4">
+              <form id="addingForm" class="flex" action="">
+                <input
+                  class="flex-grow rounded-l-lg border-t border-b border-l text-gray-800 border-gray-200 bg-white px-4 py-2"
+                  type="text"
+                  placeholder="Enter a task"
+                />
+                <button
+                  type="submit"
+                  class="px-4 rounded-r-lg bg-green-500 text-white font-semibold hover:bg-green-600"
+                >
+                  <i class="fas fa-plus"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1 lg:order-2"></div>
+
+        <div class="lg:col-span-7 lg:order-1">
+          <div class="bg-white rounded-lg shadow-md">
+            <div class="bg-gray-200 px-4 py-2 rounded-t-lg flex justify-between items-center">
+              <h5 class="text-lg font-semibold">To Do List</h5>
+              <a
+                href=""
+                class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                id="delAll"
+              >
+                Delete All
+              </a>
+            </div>
+            <div class="p-0">
+              <ul id="mainList" class="list-none">
+                <div id="accordion">
+                  <li id="upperLi" class="hidden border-b border-gray-200 last:border-b-0">
+                    <a
+                      href="#collapse0"
+                      class="block px-4 py-2 hover:bg-gray-100 line-through"
+                      data-toggle="collapse"
+                    >
+                      <!--Text Here-->
+                    </a>
+
+                    <div class="px-4 py-2 flex justify-end">
+                      <a
+                        href="#"
+                        class="text-green-500 hover:text-green-600 mx-2"
+                      >
+                        <i class="fas fa-check"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="text-red-500 hover:text-red-600 mx-2"
+                      >
+                        <i class="fas fa-times"></i>
+                      </a>
+                    </div>
+                    <div id="collapse0" class="hidden" data-parent="#accordion">
+                      <div class="px-4 py-2 bg-gray-50">
+                        <ul class="list-none">
+                          <li id="innerLi" class="border-b border-gray-200 last:border-b-0">
+                            <span class="block px-4 py-2"><!--Text Here--></span>
+                            <div class="px-4 py-2 flex justify-end">
+                              <a
+                                href="#"
+                                class="hidden text-green-500 hover:text-green-600 mx-2"
+                              >
+                                <i class="fas fa-check"></i>
+                              </a>
+                              <a
+                                href="#"
+                                class="hidden text-red-500 hover:text-red-600 mx-2"
+                              >
+                                <i class="fas fa-times"></i>
+                              </a>
+                            </div>
+                          </li>
+                          <div class="mt-2 px-4">
+                            <form action="" class="flex">
+                              <input
+                                class="flex-grow rounded-l-lg border-t border-b border-l text-gray-800 border-gray-200 bg-white px-4 py-2"
+                                type="text"
+                                placeholder="Enter Subtask"
+                              />
+                              <button
+                                type="submit"
+                                class="px-4 rounded-r-lg bg-blue-500 text-white font-semibold hover:bg-blue-600"
+                              >
+                                <i class="fas fa-plus"></i>
+                              </button>
+                            </form>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white text-center p-3 mt-8">
+      <a href="https://www.github.com/omkareshwar9849" class="text-white hover:underline">
+        by Omkareshwar
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

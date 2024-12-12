@@ -1,0 +1,19 @@
+{
+  "name": "simple-todo-list",
+  "version": "1.0.0",
+  "description": "A simple todo list application",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest",
+    "build:css": "tailwindcss build tailwind.css -o output.css"
+  },
+  "dependencies": {
+    "tailwindcss": "^2.2.19",
+    "jquery": "^3.6.0",
+    "popper.js": "^2.9.3",
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
