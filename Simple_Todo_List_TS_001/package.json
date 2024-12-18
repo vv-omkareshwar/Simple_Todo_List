@@ -1,0 +1,17 @@
+{
+  "name": "simple-todo-list-ts",
+  "version": "1.0.0",
+  "description": "A simple todo list application using TypeScript",
+  "main": "src/scripts/todoList.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node src/scripts/todoList.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.5.5",
+    "@types/node": "^16.11.12"
+  },
+  "author": "",
+  "license": "ISC"
+}
