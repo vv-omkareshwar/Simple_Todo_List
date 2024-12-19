@@ -1,0 +1,104 @@
+<User_Instructions>
+        Convert the repository with the respective target languages
+        </User_Instructions>
+
+        <Current_File>
+        target file path - Simple_Todo_List_ID456/src/main/java/com/example/service/TodoService.java
+
+        </Current_File>
+
+
+        <Target_Language>
+          Java
+          Version: {'techstack': ['Java', 'Spring Boot'], 'code_type': 'backend'}
+          <Technology_Stack>
+          None
+          </Technology_Stack>
+        </Target_Language>
+
+        <Dependency_Tree>
+        None
+        </Dependency_Tree>
+
+        <Service_JSON>
+        []
+        </Service_JSON>
+
+        <Generated_Directory_Structure>
+        .
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── com
+    │   │       └── example
+    │   │           ├── TodoListApplication.java
+    │   │           ├── controller
+    │   │           │   └── TodoController.java
+    │   │           ├── model
+    │   │           │   └── Todo.java
+    │   │           └── service
+    │   │               └── TodoService.java
+    │   └── resources
+    │       ├── application.properties
+    │       └── static
+    │           ├── index.html
+    │           ├── script.js
+    │           └── style.css
+    └── test
+        └── java
+            └── com
+                └── example
+                    ├── TodoControllerTest.java
+                    └── TodoServiceTest.java
+
+15 directories, 11 files
+
+
+The Mappings for the above target files to the respective source files are as follows: 
+{'Simple_Todo_List_ID456/pom.xml': ['Simple_Todo_List/Simple_Todo_List_ID123/pom.xml'], 'Simple_Todo_List_ID456/src/main/java/com/example/TodoListApplication.java': ['Simple_Todo_List/Simple_Todo_List_ID123/src/main/java/com/example/TodoListApplication.java'], 'Simple_Todo_List_ID456/src/main/java/com/example/controller/TodoController.java': ['Simple_Todo_List/Simple_Todo_List_ID123/src/main/java/com/example/controller/TodoController.java'], 'Simple_Todo_List_ID456/src/main/java/com/example/model/Todo.java': ['Simple_Todo_List/Simple_Todo_List_ID123/src/main/java/com/example/model/Todo.java'], 'Simple_Todo_List_ID456/src/main/java/com/example/service/TodoService.java': ['Simple_Todo_List/Simple_Todo_List_ID123/src/main/java/com/example/service/TodoService.java'], 'Simple_Todo_List_ID456/src/main/resources/application.properties': ['Simple_Todo_List/Simple_Todo_List_ID123/src/main/resources/application.properties'], 'Simple_Todo_List_ID456/src/main/resources/static/index.html': ['Simple_Todo_List/Simple_Todo_List_ID123/src/main/resources/static/index.html'], 'Simple_Todo_List_ID456/src/main/resources/static/script.js': ['Simple_Todo_List/Simple_Todo_List_ID123/src/main/resources/static/script.js'], 'Simple_Todo_List_ID456/src/main/resources/static/style.css': ['Simple_Todo_List/Simple_Todo_List_ID123/src/main/resources/static/style.css'], 'Simple_Todo_List_ID456/src/test/java/com/example/TodoControllerTest.java': ['Simple_Todo_List/Simple_Todo_List_ID123/src/test/java/com/example/TodoControllerTest.java'], 'Simple_Todo_List_ID456/src/test/java/com/example/TodoServiceTest.java': ['Simple_Todo_List/Simple_Todo_List_ID123/src/test/java/com/example/TodoServiceTest.java']}
+
+
+        </Generated_Directory_Structure>
+        <Task-Independent_conversion>
+        2. **Independent Conversion:**
+          - **Objective:** Convert the current file without considering any dependencies.
+          - **Procedure:**
+            - Analyze the current file's code to understand its logic and structure.
+            - Identify language-specific constructs and idioms that need adaptation.
+            - Make sure you follow technology stack as per the <Technology_Stack> provided.
+            - Translate these constructs into equivalent constructs in the target language and techstack in the file.
+            - Ensure the converted code maintains the original functionality.
+            - If this is backend code, implement Swagger documentation for all API endpoints.
+            - Do not rely on separate swagger.json files; instead, use inline documentation and automatic Swagger UI generation.
+            - Validate the code against the target language's best practices and conventions.
+            - Document any significant changes with comments in the code.
+            - List any new packages, libraries, or modules used in the conversion process.
+            - Dependencies should be added based on the language. Ex: Python - requirements.txt, Node.js - package.json.
+        <Output_Format>
+          ```converted
+          <converted_code>
+          ```
+           ```dependencies
+          {
+            "dependencies":  "Object/Array/String" [OPTIONAL],
+            "Libraries":  "Object/Array/String" [OPTIONAL] ,
+            "Scripts": "Object/Array/String" [OPTIONAL] ,
+            "Others": "Object/Array/String" [OPTIONAL],
+            ...
+          }
+          ```
+        </Output_Format>
+        <Glossary>
+        - **Conversion_Type:** The type of conversion process (Independent, Dependent, Nested).
+        - **Target_Language:** The programming language to which the file is being converted.
+        - **Current_File:** The code of the file that needs conversion.
+        - **Dependency_Tree:** A list of files that are dependent on the current file.
+        - **Service_JSON**: It is the list of Services that are being used in the Input Code. And Such should also be used in each generation to maintain credibility of the new application.
+        - **Generated_Directory_Structure**: In the Generated_Directory_Structure you will find the directory structure on which you are working therefore write your code as per it only.
+        - At the end of each code you are expected to generate a technically detailed summary of the code file above with all the classes, functions and etc. 
+        - First in the summary you will generate the functionality of the code file which file it imports. and in the latter part you will give the classes, function (with their return variables) and etc. Make sure the summary is built as per the language's terminologies.
+        - Summary must be enclosed inside of "```summary" and "```" delimiters
+        - Files except Source Language and Target language keep those files the same. No change would be required in those.
+        </Glossary>
+        

@@ -1,0 +1,74 @@
+{
+    "Simple_Todo_List_ID456/pom.xml": {
+        "techstack": [
+            "Maven"
+        ],
+        "code_type": "configuration"
+    },
+    "Simple_Todo_List_ID456/src/main/java/com/example/TodoListApplication.java": {
+        "techstack": [
+            "Java",
+            "Spring Boot"
+        ],
+        "code_type": "backend"
+    },
+    "Simple_Todo_List_ID456/src/main/java/com/example/controller/TodoController.java": {
+        "techstack": [
+            "Java",
+            "Spring Boot"
+        ],
+        "code_type": "backend"
+    },
+    "Simple_Todo_List_ID456/src/main/java/com/example/model/Todo.java": {
+        "techstack": [
+            "Java",
+            "Spring Boot"
+        ],
+        "code_type": "backend"
+    },
+    "Simple_Todo_List_ID456/src/main/java/com/example/service/TodoService.java": {
+        "techstack": [
+            "Java",
+            "Spring Boot"
+        ],
+        "code_type": "backend"
+    },
+    "Simple_Todo_List_ID456/src/main/resources/application.properties": {
+        "techstack": [
+            "Spring Boot"
+        ],
+        "code_type": "configuration"
+    },
+    "Simple_Todo_List_ID456/src/main/resources/static/index.html": {
+        "techstack": [
+            "HTML"
+        ],
+        "code_type": "frontend"
+    },
+    "Simple_Todo_List_ID456/src/main/resources/static/script.js": {
+        "techstack": [
+            "JavaScript"
+        ],
+        "code_type": "frontend"
+    },
+    "Simple_Todo_List_ID456/src/main/resources/static/style.css": {
+        "techstack": [
+            "CSS"
+        ],
+        "code_type": "frontend"
+    },
+    "Simple_Todo_List_ID456/src/test/java/com/example/TodoControllerTest.java": {
+        "techstack": [
+            "Java",
+            "JUnit"
+        ],
+        "code_type": "test"
+    },
+    "Simple_Todo_List_ID456/src/test/java/com/example/TodoServiceTest.java": {
+        "techstack": [
+            "Java",
+            "JUnit"
+        ],
+        "code_type": "test"
+    }
+}
