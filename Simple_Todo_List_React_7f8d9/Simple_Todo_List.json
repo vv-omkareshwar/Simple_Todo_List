@@ -1,0 +1,92 @@
+{
+  "name": "Simple_Todo_List_React_7f8d9",
+  "type": "folder",
+  "children": [
+    {
+      "name": "public",
+      "type": "folder",
+      "children": [
+        {
+          "name": "index.html",
+          "type": "file",
+          "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta\n      name=\"keywords\"\n      content=\"to do list, online to do list, to do list app\"\n    />\n    <meta\n      name=\"description\"\n      content=\"Responsive, online To Do List App that can save the tasks into local storage.\n    Whenever you enter from a device, your information won't be lost unless clear local storage by clearing the history or doing something else.\"\n    />\n    <meta name=\"author\" content=\"Okan Uregen\" />\n    <title>To Do List</title>\n    <link\n      rel=\"stylesheet\"\n      href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\"\n      integrity=\"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk\"\n      crossorigin=\"anonymous\"\n    />\n  </head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>",
+          "language": "html"
+        }
+      ]
+    },
+    {
+      "name": "src",
+      "type": "folder",
+      "children": [
+        {
+          "name": "App.js",
+          "type": "file",
+          "content": "// Content will be added during the React conversion process",
+          "language": "javascript"
+        },
+        {
+          "name": "App.css",
+          "type": "file",
+          "content": "/* Content will be added during the React conversion process */",
+          "language": "css"
+        },
+        {
+          "name": "index.js",
+          "type": "file",
+          "content": "// Content will be added during the React conversion process",
+          "language": "javascript"
+        },
+        {
+          "name": "components",
+          "type": "folder",
+          "children": [
+            {
+              "name": "TodoItem.js",
+              "type": "file",
+              "content": "// Content will be added during the React conversion process",
+              "language": "javascript"
+            },
+            {
+              "name": "TodoList.js",
+              "type": "file",
+              "content": "// Content will be added during the React conversion process",
+              "language": "javascript"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tests",
+      "type": "folder",
+      "children": [
+        {
+          "name": "App.test.js",
+          "type": "file",
+          "content": "// Content will be added during the React conversion process",
+          "language": "javascript"
+        },
+        {
+          "name": "TodoItem.test.js",
+          "type": "file",
+          "content": "// Content will be added during the React conversion process",
+          "language": "javascript"
+        },
+        {
+          "name": "TodoList.test.js",
+          "type": "file",
+          "content": "// Content will be added during the React conversion process",
+          "language": "javascript"
+        }
+      ]
+    },
+    {
+      "name": "package.json",
+      "type": "file",
+      "content": "{\n  \"name\": \"simple-todo-list-react\",\n  \"version\": \"1.0.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"react\": \"^18.2.0\",\n    \"react-dom\": \"^18.2.0\",\n    \"react-scripts\": \"5.0.1\",\n    \"bootstrap\": \"^5.3.0\",\n    \"@fortawesome/fontawesome-svg-core\": \"^6.4.0\",\n    \"@fortawesome/free-solid-svg-icons\": \"^6.4.0\",\n    \"@fortawesome/react-fontawesome\": \"^0.2.0\"\n  },\n  \"scripts\": {\n    \"start\": \"react-scripts start\",\n    \"build\": \"react-scripts build\",\n    \"test\": \"react-scripts test\",\n    \"eject\": \"react-scripts eject\"\n  },\n  \"eslintConfig\": {\n    \"extends\": [\n      \"react-app\",\n      \"react-app/jest\"\n    ]\n  },\n  \"browserslist\": {\n    \"production\": [\n      \">0.2%\",\n      \"not dead\",\n      \"not op_mini all\"\n    ],\n    \"development\": [\n      \"last 1 chrome version\",\n      \"last 1 firefox version\",\n      \"last 1 safari version\"\n    ]\n  }\n}",
+      "language": "json"
+    }
+  ],
+  "git_url": null,
+  "branch": "main"
+}
