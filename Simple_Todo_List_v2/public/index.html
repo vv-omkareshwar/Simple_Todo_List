@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="to do list, online to do list, to do list app"
+    />
+    <meta
+      name="description"
+      content="Responsive, online To Do List App that can save the tasks into local storage.
+    Whenever you enter from a device, your information won't be lost unless clear local storage by clearing the history or doing something else."
+    />
+    <meta name="author" content="Okan Uregen" />
+    <title>To Do List</title>
+    <script
+      src="https://kit.fontawesome.com/9c206210e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/css/style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="task-add-box my-3 col-12 col-lg-4 order-lg-3">
+          <div class="card">
+            <div class="card-header"><h5>Add New Task</h5></div>
+            <div class="card-body px-4">
+              <form id="addingForm" class="form-group row" action="">
+                <input
+                  class="form-control col-10 col-md-11 col-lg-10"
+                  type="text"
+                  placeholder="Enter a task"
+                />
+                <button
+                  type="submit"
+                  class="btn btn-outline-success col-2 col-md-1 col-lg-2"
+                >
+                  <i class="fas fa-plus"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="space col-0 col-lg-1 order-lg-2"></div>
+
+        <div class="list-box my-3 col-12 col-lg-7 order-lg-1">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="float-start">To Do List</h5>
+              <a
+                href=""
+                class="float-end btn btn-outline-danger rounded"
+                id="delAll"
+              >
+                Delete All
+              </a>
+            </div>
+            <div class="card-body p-0">
+              <ul id="mainList" class="list-group">
+                <div id="accordion">
+                  <li id="upperLi" class="list-group-item d-none">
+                    <a
+                      href="#collapse0"
+                      class="card-link list-item line-throught"
+                      data-bs-toggle="collapse"
+                    >
+                      <!--Text Here-->
+                    </a>
+
+                    <a
+                      href="#"
+                      class="delete-item text-danger float-end fas fa-times mt-1 mx-1"
+                    ></a>
+                    <a
+                      href="#"
+                      class="check text-success float-end fas fa-check mt-1 mx-4"
+                    ></a>
+                    <div id="collapse0" class="collapse" data-bs-parent="#accordion">
+                      <div class="under-list-item">
+                        <ul class="list-group">
+                          <li id="innerLi" class="list-group-item">
+                            <span class="m-0 p-0"><!--Text Here--></span>
+                            <a
+                              href="#"
+                              class="d-none delete-inner-item text-danger float-end fas fa-times mt-1 mx-1"
+                            ></a>
+                            <a
+                              href="#"
+                              class="d-none inner-check text-success float-end fas fa-check mt-1 mx-4"
+                            ></a>
+                          </li>
+                          <div class="mt-2 under-list-input px-4">
+                            <form action="" class="form-group row">
+                              <input
+                                class="form-control col-10 col-md-11"
+                                type="text"
+                                placeholder="Enter Subtask"
+                              />
+                              <button
+                                type="submit"
+                                class="btn-add-inner-task btn btn-primary col-2 col-md-1 p-0"
+                              >
+                                <i class="i-add-inner-task fas fa-plus"></i>
+                              </button>
+                            </form>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center p-3">
+      <a href="https://www.github.com/omkareshwar9849" class="text-light"
+        >by Omkareshwar</a
+      >
+    </footer>
+
+    <script src="../src/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
