@@ -1,0 +1,86 @@
+{
+  "name": "Simple_Todo_List_v2",
+  "type": "folder",
+  "children": [
+    {
+      "name": "public",
+      "type": "folder",
+      "children": [
+        {
+          "name": "index.html",
+          "type": "file",
+          "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta\n      name=\"keywords\"\n      content=\"to do list, online to do list, to do list app\"\n    />\n    <meta\n      name=\"description\"\n      content=\"Responsive, online To Do List App that can save the tasks into local storage.\n    Whenever you enter from a device, your information won't be lost unless clear local storage by clearing the history or doing something else.\"\n    />\n    <meta name=\"author\" content=\"Okan Uregen\" />\n    <title>To Do List</title>\n    <script\n      src=\"https://kit.fontawesome.com/9c206210e0.js\"\n      crossorigin=\"anonymous\"\n    ></script>\n    <link\n      rel=\"stylesheet\"\n      href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\"\n      integrity=\"sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM\"\n      crossorigin=\"anonymous\"\n    />\n    <link rel=\"stylesheet\" href=\"../src/css/style.css\" />\n  </head>\n  <body>\n    <div class=\"mx-auto container mt-5 row\">\n      <div class=\"task-add-box my-3 col-12 col-lg-4 order-lg-3\">\n        <div class=\"card\">\n          <div class=\"card-header\"><h5>Add New Task</h5></div>\n          <div class=\"card-body px-4\">\n            <form id=\"addingForm\" class=\"form-group row\" action=\"\">\n              <input\n                class=\"form-control col-10 col-md-11 col-lg-10\"\n                type=\"text\"\n                placeholder=\"Enter a task\"\n              />\n              <button\n                type=\"submit\"\n                class=\"btn btn-outline-success col-2 col-md-1 col-lg-2\"\n              >\n                <i class=\"fas fa-plus\"></i>\n              </button>\n            </form>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"space col-0 col-lg-1 order-lg-2\"></div>\n\n      <div class=\"list-box my-3 col-12 col-lg-7 order-lg-1\">\n        <div class=\"card\">\n          <div class=\"card-header\">\n            <h5 class=\"float-left\">To Do List</h5>\n            <a\n              href=\"\"\n              class=\"float-right btn btn-outline-danger rounded\"\n              id=\"delAll\"\n            >\n              Delete All\n            </a>\n          </div>\n          <div class=\"card-body p-0\">\n            <ul id=\"mainList\" class=\"list-group\">\n              <div id=\"accordion\">\n                <li id=\"upperLi\" class=\"list-group-item d-none\">\n                  <a\n                    href=\"#collapse0\"\n                    class=\"card-link list-item line-throught\"\n                    data-bs-toggle=\"collapse\"\n                  >\n                    <!--Text Here-->\n                  </a>\n\n                  <a\n                    href=\"#\"\n                    class=\"delete-item text-danger float-end fas fa-times mt-1 mx-1\"\n                  ></a>\n                  <a\n                    href=\"#\"\n                    class=\"check text-success float-end fas fa-check mt-1 mx-4\"\n                  ></a>\n                  <div id=\"collapse0\" class=\"collapse\" data-bs-parent=\"#accordion\">\n                    <div class=\"under-list-item\">\n                      <ul class=\"list-group\">\n                        <li id=\"innerLi\" class=\"list-group-item\">\n                          <span class=\"m-0 p-0\"><!--Text Here--></span>\n                          <a\n                            href=\"#\"\n                            class=\"d-none delete-inner-item text-danger float-end fas fa-times mt-1 mx-1\"\n                          ></a>\n                          <a\n                            href=\"#\"\n                            class=\"d-none inner-check text-success float-end fas fa-check mt-1 mx-4\"\n                          ></a>\n                        </li>\n                        <div class=\"mt-2 under-list-input px-4\">\n                          <form action=\"\" class=\"form-group row\">\n                            <input\n                              class=\"form-control col-10 col-md-11\"\n                              type=\"text\"\n                              placeholder=\"Enter Subtask\"\n                            />\n                            <button\n                              type=\"submit\"\n                              class=\"btn-add-inner-task btn btn-primary col-2 col-md-1 p-0\"\n                            >\n                              <i class=\"i-add-inner-task fas fa-plus\"></i>\n                            </button>\n                          </form>\n                        </div>\n                      </ul>\n                    </div>\n                  </div>\n                </li>\n              </div>\n            </ul>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <footer class=\"bg-dark text-light text-center p-3\">\n      <a href=\"https://www.github.com/omkareshwar9849\" class=\"text-light\"\n        >by Omkareshwar</a\n      >\n    </footer>\n\n    <script src=\"../src/js/app.js\"></script>\n    <script src=\"../src/js/todoService.js\"></script>\n    <script\n      src=\"https://code.jquery.com/jquery-3.6.4.slim.min.js\"\n      integrity=\"sha384-u7j1gGQz5z5+jXMqKqP5VcCX3sK4hzqGfD1HKk2mLo4FVm5UoAA7OxOtmb9rsH9\"\n      crossorigin=\"anonymous\"\n    ></script>\n    <script\n      src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"\n      integrity=\"sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz\"\n      crossorigin=\"anonymous\"\n    ></script>\n  </body>\n</html>\n",
+          "language": "html"
+        }
+      ]
+    },
+    {
+      "name": "src",
+      "type": "folder",
+      "children": [
+        {
+          "name": "js",
+          "type": "folder",
+          "children": [
+            {
+              "name": "app.js",
+              "type": "file",
+              "content": "// app.js content will be added here",
+              "language": "javascript"
+            },
+            {
+              "name": "todoService.js",
+              "type": "file",
+              "content": "// todoService.js content will be added here",
+              "language": "javascript"
+            }
+          ]
+        },
+        {
+          "name": "css",
+          "type": "folder",
+          "children": [
+            {
+              "name": "style.css",
+              "type": "file",
+              "content": "/* style.css content will be added here */",
+              "language": "css"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tests",
+      "type": "folder",
+      "children": [
+        {
+          "name": "app.test.js",
+          "type": "file",
+          "content": "// app.test.js content will be added here",
+          "language": "javascript"
+        },
+        {
+          "name": "todoService.test.js",
+          "type": "file",
+          "content": "// todoService.test.js content will be added here",
+          "language": "javascript"
+        }
+      ]
+    },
+    {
+      "name": "package.json",
+      "type": "file",
+      "content": "{\n  \"name\": \"simple-todo-list-v2\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A simple todo list application\",\n  \"main\": \"src/js/app.js\",\n  \"scripts\": {\n    \"test\": \"jest\"\n  },\n  \"dependencies\": {\n    \"bootstrap\": \"^5.3.0\",\n    \"jquery\": \"^3.6.4\"\n  },\n  \"devDependencies\": {\n    \"jest\": \"^29.5.0\"\n  }\n}",
+      "language": "json"
+    },
+    {
+      "name": "README.md",
+      "type": "file",
+      "content": "# Simple Todo List v2\n\nThis is a simple todo list application that allows users to add, delete, and mark tasks as complete. It also supports subtasks and uses local storage to persist data.\n\n## Features\n\n- Add new tasks\n- Delete tasks\n- Mark tasks as complete\n- Add subtasks to main tasks\n- Delete all tasks\n- Data persistence using local storage\n\n## Technologies Used\n\n- HTML5\n- CSS3 (Bootstrap 5.3.0)\n- JavaScript (ES6+)\n- Font Awesome (for icons)\n- jQuery 3.6.4\n\n## Setup and Installation\n\n1. Clone the repository\n2. Open `public/index.html` in your web browser\n\n## Testing\n\nRun `npm test` to execute the test suite using Jest.\n\n## Contributing\n\nPlease feel free to submit pull requests or open issues to improve the application.\n\n## License\n\nThis project is open source and available under the [MIT License](LICENSE).",
+      "language": "markdown"
+    }
+  ],
+  "git_url": null,
+  "branch": "main"
+}
