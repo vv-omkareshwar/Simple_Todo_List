@@ -1,0 +1,80 @@
+{
+  "name": "Simple_Todo_List_v2",
+  "type": "folder",
+  "children": [
+    {
+      "name": "src",
+      "type": "folder",
+      "children": [
+        {
+          "name": "css",
+          "type": "folder",
+          "children": [
+            {
+              "name": "style.css",
+              "type": "file",
+              "content": "",
+              "language": "css"
+            }
+          ]
+        },
+        {
+          "name": "js",
+          "type": "folder",
+          "children": [
+            {
+              "name": "app.js",
+              "type": "file",
+              "content": "",
+              "language": "javascript"
+            },
+            {
+              "name": "todoService.js",
+              "type": "file",
+              "content": "",
+              "language": "javascript"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tests",
+      "type": "folder",
+      "children": [
+        {
+          "name": "app.test.js",
+          "type": "file",
+          "content": "",
+          "language": "javascript"
+        },
+        {
+          "name": "todoService.test.js",
+          "type": "file",
+          "content": "",
+          "language": "javascript"
+        }
+      ]
+    },
+    {
+      "name": "README.md",
+      "type": "file",
+      "content": "",
+      "language": "markdown"
+    },
+    {
+      "name": "package.json",
+      "type": "file",
+      "content": "",
+      "language": "json"
+    },
+    {
+      "name": ".gitignore",
+      "type": "file",
+      "content": "",
+      "language": "gitignore"
+    }
+  ],
+  "git_url": null,
+  "branch": "main"
+}
