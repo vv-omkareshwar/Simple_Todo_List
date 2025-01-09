@@ -1,0 +1,63 @@
+{
+  "appName": "Simple Todo List",
+  "version": "1.0.0",
+  "initialTasks": [
+    {
+      "id": 1,
+      "title": "Complete project proposal",
+      "description": "Draft and finalize the project proposal document",
+      "completed": false,
+      "dueDate": "2023-07-15",
+      "innerTasks": [
+        {
+          "id": 101,
+          "title": "Research project requirements",
+          "completed": true
+        },
+        {
+          "id": 102,
+          "title": "Outline main sections",
+          "completed": false
+        },
+        {
+          "id": 103,
+          "title": "Write executive summary",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Buy groceries",
+      "description": "Purchase items for weekly meal prep",
+      "completed": false,
+      "dueDate": "2023-07-10",
+      "innerTasks": [
+        {
+          "id": 201,
+          "title": "Make shopping list",
+          "completed": true
+        },
+        {
+          "id": 202,
+          "title": "Check for coupons",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Exercise",
+      "description": "Complete daily workout routine",
+      "completed": false,
+      "dueDate": "2023-07-09",
+      "innerTasks": []
+    }
+  ],
+  "settings": {
+    "allowInnerTasks": true,
+    "showCompletedTasks": true,
+    "sortBy": "dueDate",
+    "theme": "light"
+  }
+}
