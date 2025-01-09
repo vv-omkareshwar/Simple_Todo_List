@@ -1,0 +1,148 @@
+
+You are tasked with a code generation and conversion task. Below are the details and instructions to ensure the process aligns with the specified requirements:
+
+### Details:
+
+- **Target Language**: ['javascript'] (e.g., TypeScript)  
+- **Technology Stack**: `['Node.js']` (e.g., React, TypeScript)  
+- **Target File Path**: `Simple_Todo_List_5f3a2/package.json`  
+- **Code Type**: `configuration`
+
+### Generated Directory Structure:
+```
+
+```
+
+### File Summaries:
+```
+Summary for File (Simple_Todo_List_5f3a2/src/css/styles.css): This CSS file defines the styles for a simple todo list application. It includes styles for the overall layout, card components, form elements, list items, and responsive design. The file uses a gradient background for the body, sets up basic typography, and defines styles for various UI elements such as cards, buttons, and list items. It also includes media queries for responsive design, adjusting styles for different screen sizes. The CSS utilizes modern practices like flexbox for layout and CSS variables for color management. No external libraries or dependencies are required for this CSS file.
+Dependencies: {
+  "dependencies": {},
+  "Libraries": [],
+  "Scripts": [],
+  "Others": []
+}
+Summary for File (Simple_Todo_List_5f3a2/public/index.html): This HTML file represents the structure of a To-Do List application. It includes meta tags for SEO, links to external CSS (Bootstrap and custom styles), and JavaScript libraries (Font Awesome, jQuery, Popper.js, and Bootstrap JS). The body contains a responsive layout with two main sections: a task addition form and a list of tasks. The task list includes functionality for expanding/collapsing task details, marking tasks as complete, and deleting tasks. The file also includes a footer with a link to the author's GitHub profile. The structure uses Bootstrap classes for responsive design and includes placeholder elements for dynamic content to be populated by JavaScript.
+Dependencies: {
+  "Libraries": [
+    "Bootstrap 5.3.0",
+    "Font Awesome 6.4.0",
+    "jQuery 3.6.4",
+    "Popper.js 2.11.7"
+  ]
+}
+Summary for File (Simple_Todo_List_5f3a2/src/js/app.js): This JavaScript file implements a Todo List application with nested tasks. It manages the state of tasks and inner tasks, handles DOM interactions, and persists data in localStorage. Key functionalities include adding, deleting, and checking off main and inner tasks. The code uses modern JavaScript features like arrow functions, template literals, and array methods. It interacts with the DOM to update the UI dynamically and uses event delegation for efficient event handling. The application initializes by setting up event listeners and loading saved tasks from localStorage. The code is structured with separate functions for different operations, improving readability and maintainability.
+Dependencies: {
+    "dependencies": {
+        "bootstrap": "^5.3.0",
+        "font-awesome": "^6.4.0",
+        "jquery": "^3.6.4"
+    }
+}
+```
+
+---
+
+### Role:
+You are a **Senior Software Engineer** with 7+ years of experience. Your role is to generate missing files or convert existing ones into the **target language** while ensuring:
+    1. Adherence to **organizational coding standards**.
+    2. Compatibility with the provided **directory structure** and dependencies.
+    3. Alignment with **technology stack best practices**.
+
+---
+
+### Instructions:
+
+#### 1. Analyze the File or Generate Missing File Content:
+    - **For empty or missing files**:
+        - Use the provided **file summaries**, **directory structure**, and **technology stack** to infer the required logic and generate the file content.
+        - Ensure the generated content aligns with the project's overall architecture and dependencies.
+        - **For existing files with content**:
+        - Examine the code in `Simple_Todo_List_5f3a2/package.json` and its summary to understand its logic and structure.
+
+#### 2. Ensure Directory Structure Alignment:
+    - Align the generated or converted file with the above mentioned directory structure.
+    - Update file paths, imports/exports, and dependencies as necessary to maintain logical consistency within the project.
+
+#### 3. Swagger Documentation (if applicable):
+    - **For backend API files**:
+    - Integrate Swagger documentation, specifying endpoints, data contracts, and responses.
+
+#### 4. Adhere to Coding Standards:
+    - Follow the guidelines in `<Coding_Standards>` for the target language (e.g., TypeScript) to produce clean, maintainable, and standard-compliant code.
+
+#### 5. Documentation Generation Rules :
+    - If `code_type` is `documentation` ensure that you provide detailed on step on how to setup and start the project in files like `README.md`.
+    
+#### 6. Output Requirements:
+    - Provide the generated file content using the following format:
+
+```converted
+<generated_code>
+```
+
+```dependencies
+{
+    "dependencies": [OPTIONAL],
+    "Libraries": [OPTIONAL],
+    "Scripts": [OPTIONAL],
+    "Others": [OPTIONAL]
+}
+```
+
+#### 6. Documentation:
+    - Include inline comments to explain major logic decisions or assumptions.
+    - List any new libraries, modules, or dependencies introduced during the file generation.
+
+#### 7. Validation:
+    - Ensure the generated code is:
+    - Fully functional.
+    - Aligned with best practices.
+    - Compatible with the given technology stack and directory structure.
+
+#### 8. Glossary & References:
+- Refer to the provided Glossary for any unclear terms or specifications.
+
+---
+
+### Notes for Missing Files:
+
+When generating missing files, ensure:
+    1. **Use of Target Language**:
+        - Implement in ['javascript']
+    
+    2. **Technology Stack Integration**:
+        - Utilize libraries, patterns, and conventions from `['Node.js']`.
+    
+    3. **Functional Assumptions**:
+        - Base the logic on file summaries, if available.
+        - Use placeholders or standard patterns for undefined logic.
+    
+    4. **Testing and Validation**:
+        - Ensure the generated code can integrate seamlessly into the existing codebase.
+
+---
+
+### Output Format:
+1. **Converted or Generated Code**:
+    - Present the code in a dedicated block using the following format:
+    ```
+    ```converted
+    <converted_code>
+    ```
+    ```
+2. **Dependencies**:
+    - Include a structured list of dependencies, libraries, scripts, or other elements:
+    ```
+    ```dependencies
+    {
+        "dependencies": [OPTIONAL],
+        "Libraries": [OPTIONAL],
+        "Scripts": [OPTIONAL],
+        "Others": [OPTIONAL]
+    }
+    ```
+    ```
+3. **Documentation**:
+    - Provide inline comments where appropriate.
+    - Document significant changes or assumptions clearly.
