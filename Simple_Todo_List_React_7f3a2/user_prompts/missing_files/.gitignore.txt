@@ -1,0 +1,196 @@
+
+You are tasked with a code generation and conversion task. Below are the details and instructions to ensure the process aligns with the specified requirements:
+
+### Details:
+
+- **Target Language**: ['javascript', 'reactjs'] (e.g., TypeScript)  
+- **Technology Stack**: `['Git']` (e.g., React, TypeScript)  
+- **Target File Path**: `Simple_Todo_List_React_7f3a2/.gitignore`  
+- **Code Type**: `configuration`
+
+### Generated Directory Structure:
+```
+
+```
+
+### File Summaries:
+```
+Summary for File (Simple_Todo_List_React_7f3a2/src/index.js): This file serves as the entry point for the React application. It imports necessary dependencies from React and ReactDOM, as well as the main App component and its associated CSS file. The code creates a root using ReactDOM.createRoot() and renders the App component within React.StrictMode for additional checks and warnings during development. The file structure follows standard React application conventions, with the main application logic moved to the App component.
+Dependencies: {
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+}
+Summary for File (Simple_Todo_List_React_7f3a2/public/index.html): This HTML file serves as the entry point for a React-based To-Do List application. It includes meta tags for SEO optimization and responsiveness. The file links to external CSS for Font Awesome icons (version 6.4.0) and Bootstrap (version 5.3.0) for styling. The body contains a single div with id "root" where the React application will be mounted. Bootstrap's JavaScript bundle is included at the end of the body for any required Bootstrap functionality. The dependencies section lists the necessary npm packages for the React application, including React, ReactDOM, Bootstrap, and Font Awesome components for React.
+Dependencies: {
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "bootstrap": "^5.3.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0"
+  }
+}
+Summary for File (Simple_Todo_List_React_7f3a2/src/App.css): This CSS file (App.css) defines the styles for a React-based Todo List application. It sets the overall layout, colors, and responsive design for the app. Key features include:
+
+1. Global styles: Sets font size and background gradient.
+2. Card styles: Defines appearance for card components.
+3. Form styles: Customizes form control and button appearances.
+4. List styles: Styles for list items and under-list elements.
+5. Utility classes: Includes classes for text decoration (line-through).
+6. Footer positioning: Fixed at the bottom on larger screens.
+7. Responsive design: Media queries for different screen sizes, adjusting layout and font sizes.
+8. Custom class names: Specific classes for styling different elements of the Todo List app.
+
+The file uses standard CSS syntax and is compatible with React's CSS importing system.
+Dependencies: {
+  "dependencies": {},
+  "Libraries": [],
+  "Scripts": [],
+  "Others": []
+}
+Summary for File (Simple_Todo_List_React_7f3a2/src/components/TodoItem.js): This file defines a React component called TodoItem, which represents a single task in a todo list. It imports React and PropTypes for type checking. The component receives props for the task details, and functions for deleting, toggling, and adding inner tasks. It uses the useState hook to manage the state of the inner task input. The component renders the task text, delete button, inner task form, and a list of inner tasks if they exist. It also includes PropTypes for type checking of the props.
+
+Key elements:
+- useState hook for managing inner task input state
+- handleInnerTaskSubmit function for adding new inner tasks
+- Rendering of task text, delete button, and inner task form
+- Conditional rendering of inner tasks list
+- PropTypes for type checking of props
+- Export of the TodoItem component as default
+Dependencies: {
+  "dependencies": {
+    "react": "^18.2.0",
+    "prop-types": "^15.8.1"
+  }
+}
+Summary for File (Simple_Todo_List_React_7f3a2/src/App.js): This App.js file is the main component of a React-based Todo List application. It manages the state for all tasks and inner tasks, handles local storage operations, and renders the main structure of the app. The component uses React hooks (useState and useEffect) for state management and side effects. It includes functions for loading and saving tasks to local storage, adding new tasks, and deleting all tasks. The main UI consists of a form for adding new tasks, a TodoList component (imported from './components/TodoList') for rendering the list of tasks, and a button to delete all tasks. The file imports the TodoList component and a CSS file for styling.
+Dependencies: {
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
+Summary for File (Simple_Todo_List_React_7f3a2/src/components/TodoList.js): This React component, TodoList, manages a list of tasks and their subtasks. It uses React hooks (useState, useEffect) for state management and side effects. The component handles adding, toggling, and deleting main tasks and subtasks, with data persistence using localStorage. Key functions include addNewTask, toggleTaskCheck, deleteTask, addInnerTask, toggleInnerTaskCheck, deleteInnerTask, and deleteAllTasks. The component renders a form for adding new tasks and a list of TodoItem components, each representing a main task with its subtasks. The component also includes a "Delete All" button to clear all tasks.
+Dependencies: {
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
+```
+
+---
+
+### Role:
+You are a **Senior Software Engineer** with 7+ years of experience. Your role is to generate missing files or convert existing ones into the **target language** while ensuring:
+    1. Adherence to **organizational coding standards**.
+    2. Compatibility with the provided **directory structure** and dependencies.
+    3. Alignment with **technology stack best practices**.
+
+---
+
+### Instructions:
+
+#### 1. Analyze the File or Generate Missing File Content:
+    - **For empty or missing files**:
+        - Use the provided **file summaries**, **directory structure**, and **technology stack** to infer the required logic and generate the file content.
+        - Ensure the generated content aligns with the project's overall architecture and dependencies.
+        - **For existing files with content**:
+        - Examine the code in `Simple_Todo_List_React_7f3a2/.gitignore` and its summary to understand its logic and structure.
+
+#### 2. Ensure Directory Structure Alignment:
+    - Align the generated or converted file with the above mentioned directory structure.
+    - Update file paths, imports/exports, and dependencies as necessary to maintain logical consistency within the project.
+
+#### 3. Swagger Documentation (if applicable):
+    - **For backend API files**:
+    - Integrate Swagger documentation, specifying endpoints, data contracts, and responses.
+
+#### 4. Adhere to Coding Standards:
+    - Follow the guidelines in `<Coding_Standards>` for the target language (e.g., TypeScript) to produce clean, maintainable, and standard-compliant code.
+
+#### 5. Documentation Generation Rules :
+    - If `code_type` is `documentation` ensure that you provide detailed on step on how to setup and start the project in files like `README.md`.
+    
+#### 6. Output Requirements:
+    - Provide the generated file content using the following format:
+
+```converted
+<generated_code>
+```
+
+```dependencies
+{
+    "dependencies": [OPTIONAL],
+    "Libraries": [OPTIONAL],
+    "Scripts": [OPTIONAL],
+    "Others": [OPTIONAL]
+}
+```
+
+#### 6. Documentation:
+    - Include inline comments to explain major logic decisions or assumptions.
+    - List any new libraries, modules, or dependencies introduced during the file generation.
+
+#### 7. Validation:
+    - Ensure the generated code is:
+    - Fully functional.
+    - Aligned with best practices.
+    - Compatible with the given technology stack and directory structure.
+
+#### 8. Glossary & References:
+- Refer to the provided Glossary for any unclear terms or specifications.
+
+---
+
+### Notes for Missing Files:
+
+When generating missing files, ensure:
+    1. **Use of Target Language**:
+        - Implement in ['javascript', 'reactjs']
+    
+    2. **Technology Stack Integration**:
+        - Utilize libraries, patterns, and conventions from `['Git']`.
+    
+    3. **Functional Assumptions**:
+        - Base the logic on file summaries, if available.
+        - Use placeholders or standard patterns for undefined logic.
+    
+    4. **Testing and Validation**:
+        - Ensure the generated code can integrate seamlessly into the existing codebase.
+
+---
+
+### Output Format:
+1. **Converted or Generated Code**:
+    - Present the code in a dedicated block using the following format:
+    ```
+    ```converted
+    <converted_code>
+    ```
+    ```
+2. **Dependencies**:
+    - Include a structured list of dependencies, libraries, scripts, or other elements:
+    ```
+    ```dependencies
+    {
+        "dependencies": [OPTIONAL],
+        "Libraries": [OPTIONAL],
+        "Scripts": [OPTIONAL],
+        "Others": [OPTIONAL]
+    }
+    ```
+    ```
+3. **Documentation**:
+    - Provide inline comments where appropriate.
+    - Document significant changes or assumptions clearly.
